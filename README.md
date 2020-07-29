@@ -13,7 +13,8 @@ IPv6Echo.py [-h | --help] | [-v | --version] | | [-d | --document]
               
 ```
 ### Usage instruction tricks.
-If the server and client in the same host, we can detect the client actual Global Unicast IPv6  Address(ipv6 or temporary IPv6...). (The example is in Linux-Ubuntu 20.04 LTS environment)
+If the server and client in the same host, we can detect the client actual Global Unicast IPv6  Address(ipv6 or temporary IPv6...).
+(The example is in Linux-Ubuntu 20.04 LTS environment)
 
 #### The method:
 

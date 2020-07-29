@@ -10,7 +10,7 @@ import socket
 #*********************************************************************************
 
 #
-# EchoServerUDP_IPV6.py 
+# IPv6Echo.py 
 # @gemesif 
 # date 2020 07 16
 #
@@ -39,7 +39,6 @@ def myDate():
     now = datetime.now()
     s1 = now.strftime("%Y%m%d %H%M%S")
     return(s1)
-
 #*********************************************************************************
 
 # print('ARGV      :', sys.argv[1:])
@@ -86,7 +85,8 @@ My solution the IPv6 Echo.py, IPv6EchoClient.py pair, written in Python programm
 {help}
 ```
 ### Usage instruction tricks.
-If the server and client in the same host, we can detect the client actual Global Unicast IPv6  Address(ipv6 or temporary IPv6...). (The example is in Linux-Ubuntu 20.04 LTS environment)
+If the server and client in the same host, we can detect the client actual Global Unicast IPv6  Address(ipv6 or temporary IPv6...).
+(The example is in Linux-Ubuntu 20.04 LTS environment)
 
 #### The method:
 
@@ -118,13 +118,13 @@ Starting the client
 for opt, arg in options:
     if opt in ('-h', '--help'):
         print(usagestring)
-        exit(0)
+        sys.exit(0)
     elif opt in ('-v', '--version'):
         print(versionstring)
-        exit(0)
+        sys.exit(0)
     elif opt in ('-d', '--document'):
         print(docstring)
-        exit(0)
+        sys.exit(0)
     elif opt in ('-i', '--ipaddr'):
         IP = arg 
         pass
